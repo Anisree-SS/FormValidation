@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>formValidation</title>
+      <link rel="stylesheet" href="./style/style.css">
+      <script src="script/script.js"></script>
+   </head>
+   <body>
+      <div class="center">
+         <form>
+            <div class="centerTop">
+               <h3>REGISTRATION FORM</h3>
+            </div>
+            <div class="centerBody">
+               <div class="centerBodyData">
+                  <div class="centerBodyDataLeft">
+                     <p>First name </p>
+                  </div>
+                  <div class="centerBodyDataMid">
+                     <input type="text" id="fName">
+                  </div>
+                  <div class="centerBodyDataRight">
+                     <p id="fNameValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="centerBodyData">
+                  <div class="centerBodyDataLeft">
+                     <p>Last name </p>
+                  </div>
+                  <div class="centerBodyDataMid">
+                     <input type="text" id="lName">
+                  </div>
+                  <div class="centerBodyDataRight">
+                     <p id="lNameValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="centerBodyData">
+                  <div class="centerBodyDataLeft">
+                     <p>Address </p>
+                  </div>
+                  <div class="centerBodyDataMid">
+                     <textarea id="add"></textarea>
+                  </div>
+                  <div class="centerBodyDataRight">
+                     <p id="addValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="centerBodyData">
+                  <div class="centerBodyDataLeft">
+                     <p>Phone number </p>
+                  </div>
+                  <div class="centerBodyDataMid">
+                     <input type="text" id="phone" maxlength="10" oninput="phoneNo(this)">
+                  </div>
+                  <div class="centerBodyDataRight">
+                     <p id="phoneValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="centerBodyData">
+                  <div class="centerBodyDataLeft">
+                     <p>Email Id </p>
+                  </div>
+                  <div class="centerBodyDataMid">
+                     <input type="text" id="email">
+                  </div>
+                  <div class="centerBodyDataRight">
+                     <p id="emailValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="centerBodyData">
+                  <div class="centerBodyDataLeft">
+                     <p>Set password </p>
+                  </div>
+                  <div class="centerBodyDataMid">
+                     <input type="text" id="demoPass" onclick="password()">
+                  </div>
+                  <div class="centerBodyDataRight">
+                     <p id="demoPassValid" class="error"></p>
+                  </div>
+               </div>
+               <div class="centerBodyData">
+                  <div class="centerBodyDataLeft">
+                     <p>Confirm password </p>
+                  </div>
+                  <div class="centerBodyDataMid">
+                     <input type="password" id="conPass" onclick="confirmPassword()">
+                  </div>
+                  <div class="centerBodyDataRight">
+                     <p id="conPassValid" class="error" ></p>
+                  </div>
+               </div>
+            </div>
+            <div class="centerBottom">
+               <input type="button" value="Submit" onclick="validation()">
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
