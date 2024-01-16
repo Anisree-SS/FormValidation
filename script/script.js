@@ -61,6 +61,8 @@ function validation() {
       }
    }
 
+   demoPass = document.getElementById("demoPass").value;
+   conPass = document.getElementById("conPass").value;
    if (demoPass == ""){
       document.getElementById("demoPassValid").innerHTML = "Enter password";
       count++;
