@@ -53,7 +53,7 @@ function validation() {
    }
    else {
       if (!((email.includes('@')) && ((email.includes('.in')) || (email.includes('.gov')) || (email.includes('.com'))))){
-         document.getElementById("emailValid").innerHTML = "Enter valid email number!!";
+         document.getElementById("emailValid").innerHTML = "Enter valid email address!!";
          count++;
    }
       else {
