@@ -7,7 +7,7 @@
    </head>
    <body>
       <div class="center">
-         <form>
+         <form name="registration">
             <div class="centerTop">
                <h3>REGISTRATION FORM</h3>
             </div>
@@ -17,7 +17,7 @@
                      <p>First name </p>
                   </div>
                   <div class="centerBodyDataMid">
-                     <input type="text" id="fName">
+                     <input type="text" id="fName" oninput="names(this)">
                   </div>
                   <div class="centerBodyDataRight">
                      <p id="fNameValid" class="error"></p>
@@ -28,7 +28,7 @@
                      <p>Last name </p>
                   </div>
                   <div class="centerBodyDataMid">
-                     <input type="text" id="lName">
+                     <input type="text" id="lName" oninput="names(this)">
                   </div>
                   <div class="centerBodyDataRight">
                      <p id="lNameValid" class="error"></p>
@@ -72,7 +72,7 @@
                      <p>Set password </p>
                   </div>
                   <div class="centerBodyDataMid">
-                     <input type="text" id="demoPass" onclick="password()">
+                     <input type="text" id="demoPass" oninput="confirmPassword()">
                   </div>
                   <div class="centerBodyDataRight">
                      <p id="demoPassValid" class="error"></p>
@@ -83,7 +83,7 @@
                      <p>Confirm password </p>
                   </div>
                   <div class="centerBodyDataMid">
-                     <input type="password" id="conPass" onclick="confirmPassword()">
+                     <input type="password" id="conPass" oninput="password()">
                   </div>
                   <div class="centerBodyDataRight">
                      <p id="conPassValid" class="error" ></p>
