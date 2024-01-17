@@ -16,7 +16,7 @@ function validation() {
    if ((lname == "") || (!isNaN(lname))){
       document.getElementById("lNameValid").innerHTML = "Enter a valid last name!!";
       count++;
-   }
+   }	
    else {
       document.getElementById("lNameValid").innerHTML = "";
    }
@@ -52,10 +52,11 @@ function validation() {
       count++;
    }
    else {
-      if (!((email.includes('@')) && ((email.includes('.in')) || (email.includes('.gov')) || (email.includes('.com'))))){
+      emailFormate=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (!email.match(emailFormate)){
          document.getElementById("emailValid").innerHTML = "Enter valid email address!!";
          count++;
-   }
+      }
       else {
          document.getElementById("emailValid").innerHTML = "";
       }
@@ -76,6 +77,7 @@ function validation() {
       document.registration.reset();
    }
 }
+
 
 
 function password(){
