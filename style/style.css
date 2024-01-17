@@ -20,7 +20,7 @@
 	padding: 0px 10px 10px 85px;
 }
 
-.centerBodyData {
+.dataField{
 	display: flex;
 	align-items: center;
 	gap: 5px;
@@ -31,7 +31,7 @@
 	justify-content: center;
 }
 
-.centerBodyDataLeft {
+.labelStyle{
 	width: 35%;
 }
 

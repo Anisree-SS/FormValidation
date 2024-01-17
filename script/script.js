@@ -1,4 +1,5 @@
-function validation() {
+function validation(event) {
+   event.preventDefault()
    var count = 0;
    fname = document.getElementById("fName").value;
    fname = fname.trim();
